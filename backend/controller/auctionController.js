@@ -11,8 +11,8 @@ const createAuction = async (req, res) => {
       date: req.body.date,
       details: req.body.details,
       image: req.body.image,
-      auctionStartTime: req.body.auctionStartTime,
-      auctionEndTime: req.body.auctionEndTime,
+      //auctionStartTime: req.body.auctionStartTime,
+      //auctionEndTime: req.body.auctionEndTime,
     });
 
     const auction = await newAuction.save();

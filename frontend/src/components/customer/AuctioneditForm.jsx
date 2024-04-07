@@ -12,8 +12,8 @@ const AuctioneditForm = ({ id, homename, size, infodetails, imagelink }) => {
   const [date, setDate] = useState("");
   const [details, setDetails] = useState(infodetails);
   const [startingPrice, setStartingPrice] = useState("");
-  const [auctionStartTime, setAuctionStartTime] = useState("");
-  const [auctionEndTime, setAuctionEndTime] = useState("");
+  //const [auctionStartTime, setAuctionStartTime] = useState("");
+  //const [auctionEndTime, setAuctionEndTime] = useState("");
   const [image, setImage] = useState(imagelink);
   const [email, setEmail] = useState(
     localStorage.getItem("user")
@@ -67,8 +67,8 @@ const AuctioneditForm = ({ id, homename, size, infodetails, imagelink }) => {
     setDate("");
     setDetails("");
     setStartingPrice("");
-    setAuctionStartTime("");
-    setAuctionEndTime("");
+    //setAuctionStartTime("");
+    //setAuctionEndTime("");
     setImage(null);
   };
 
@@ -135,13 +135,13 @@ const AuctioneditForm = ({ id, homename, size, infodetails, imagelink }) => {
         <div className="w-full px-3 mt-2">
           <label
             className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-            htmlFor="car-image"
+            htmlFor="Home-image"
           >
             Add Image
           </label>
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="car-image"
+            id="Home-image"
             type="text"
             value={image}
             onChange={(e) => setImage(e.target.value)}

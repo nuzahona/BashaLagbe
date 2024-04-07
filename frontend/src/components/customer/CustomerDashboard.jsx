@@ -65,7 +65,7 @@ const CustomerDashboard = () => {
   console.log(userhomedata);
 
   const [bidPrice, setBidPrice] = useState("");
-  const [tranxd, setTrnxd] = useState("");
+  //const [tranxd, setTrnxd] = useState("");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -81,10 +81,6 @@ const CustomerDashboard = () => {
     // Add your logic to handle the bid submission
     if (bidPrice.trim() === "") {
       alert("Please enter a bid amount.");
-      return;
-    }
-    if (tranxd.trim() === "") {
-      alert("Please enter a transaction id");
       return;
     }
     if (bidPrice.trim() === "") {
@@ -215,7 +211,7 @@ const CustomerDashboard = () => {
                       </td>
                       <td className="pt-2 flex justify-center">
                         <button className="rounded shadow-sm bg-green-300 text-black">
-                          {item2.payment ? "Paid" : "Pending"}
+                          {item2.payment ? "Booked" : "Pending"}
                         </button>
                       </td>
                     </tr>

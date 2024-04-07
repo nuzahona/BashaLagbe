@@ -59,14 +59,6 @@ const auctionSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    auctionStartTime: {
-      type: Date,
-      required: true,
-    },
-    auctionEndTime: {
-      type: Date,
-      required: true,
-    },
     bidders: [bidderSchema],
   },
   {

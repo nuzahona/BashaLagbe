@@ -8,8 +8,8 @@ const Auctoinform = () => {
   const [date, setDate] = useState("");
   const [details, setDetails] = useState("");
   const [startingPrice, setStartingPrice] = useState("");
-  const [auctionStartTime, setAuctionStartTime] = useState("");
-  const [auctionEndTime, setAuctionEndTime] = useState("");
+  //const [auctionStartTime, setAuctionStartTime] = useState("");
+  //const [auctionEndTime, setAuctionEndTime] = useState("");
   const [image, setImage] = useState("");
   const [email, setEmail] = useState(
     localStorage.getItem("user")
@@ -49,8 +49,8 @@ const Auctoinform = () => {
           date,
           details,
           startingPrice,
-          auctionStartTime,
-          auctionEndTime,
+          //auctionStartTime,
+          //auctionEndTime,
           image: image,
         }
       );
@@ -67,8 +67,8 @@ const Auctoinform = () => {
     setDate("");
     setDetails("");
     setStartingPrice("");
-    setAuctionStartTime("");
-    setAuctionEndTime("");
+    //setAuctionStartTime("");
+    //setAuctionEndTime("");
     setImage(null);
   };
 
@@ -180,36 +180,7 @@ const Auctoinform = () => {
               onChange={(e) => setStartingPrice(e.target.value)}
             />
           </div>
-          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label
-              className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-              htmlFor="auctionStartTime"
-            >
-              Booking Start Time
-            </label>
-            <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="auctionStartTime"
-              type="date"
-              value={auctionStartTime}
-              onChange={(e) => setAuctionStartTime(e.target.value)}
-            />
-          </div>
-          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label
-              className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-              htmlFor="auctionEndTime"
-            >
-              Booking End Time
-            </label>
-            <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="auctionEndTime"
-              type="date"
-              value={auctionEndTime}
-              onChange={(e) => setAuctionEndTime(e.target.value)}
-            />
-          </div>
+          
           <div className="w-full px-3 mt-2">
             <label
               className="block uppercase tracking-wide text-white text-xs font-bold mb-2"

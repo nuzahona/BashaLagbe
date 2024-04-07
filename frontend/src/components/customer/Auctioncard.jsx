@@ -17,7 +17,7 @@ const Auctioncard = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [iseditModalOpen, setIsEditModalOpen] = useState(false);
   const [bidPrice, setBidPrice] = useState("");
-  const [tranxd, setTrnxd] = useState("");
+  //const [tranxd, setTrnxd] = useState("");
   const [error, setError] = useState("");
   const [data, setData] = useState({});
 
@@ -61,7 +61,7 @@ const Auctioncard = ({
         `http://localhost:3001/api/auctoin/bid/${id}`,
         {
           email: userEmail,
-          trxnid: tranxd,
+          //trxnid: tranxd,
           bidderName: userName,
           bidAmount: bidPrice,
         }
@@ -83,7 +83,7 @@ const Auctioncard = ({
     // These should only run if the try block is successful
     closeModal();
     setBidPrice("");
-    setTrnxd("");
+    //setTrnxd("");
   };
 
   return (
@@ -103,7 +103,7 @@ const Auctioncard = ({
             {details}
           </p>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Booking start at <b className="text-white">BDT {startbid}</b>
+            Booking start at <b className="text-black">BDT {startbid}</b>
           </p>
 
           {/* Add a button to trigger the modal */}
@@ -200,17 +200,7 @@ const Auctioncard = ({
                     placeholder="Enter your Booking money"
                     className="mt-2 p-2 border border-gray-300 rounded-md w-full"
                   />
-                  <h1 className="text-lg font-medium text-gray-900 mt-4">
-                    Please pay BDT 10000 through Bkash at 01727260141:
-                  </h1>
-                  <input
-                    required
-                    type="text"
-                    value={tranxd}
-                    onChange={(e) => setTrnxd(e.target.value)}
-                    placeholder="Enter trnxd id"
-                    className="mt-2 p-2 border border-gray-300 rounded-md w-full"
-                  />
+                  
                   <div className="mt-4 flex justify-end">
                     <button
                       onClick={submitBid}
