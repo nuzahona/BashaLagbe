@@ -243,6 +243,9 @@ const AdminDashboard = () => {
                       Booking Amount
                     </th>
                     <th className="bg-zinc-950 text-white text-center rounded-md">
+                      Email
+                    </th>
+                    <th className="bg-zinc-950 text-white text-center rounded-md">
                       Action
                     </th>
                   </tr>
@@ -256,6 +259,7 @@ const AdminDashboard = () => {
                             <td>1</td>
                             <td>{item1.homeName}</td>
                             <td>{item2.bidAmount}</td>
+                            <td>{item2.bidderEmail}</td>
                             <td className="flex flex-row items-center justify-around">
                               <button
                                 className="rounded shadow-sm bg-teal-600 hover:bg-teal-800"
