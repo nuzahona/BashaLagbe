@@ -147,7 +147,7 @@ const AuctioneditForm = ({ id, homename, size, infodetails, imagelink }) => {
             onChange={(e) => setImage(e.target.value)}
           />
           <p className="text-gray-600 text-xs italic mt-2">
-            Upload an image for the car
+            Upload an image for the home
           </p>
         </div>
 
