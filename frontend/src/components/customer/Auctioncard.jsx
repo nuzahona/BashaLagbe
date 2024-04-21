@@ -106,7 +106,7 @@ const Auctioncard = ({
             Booking start at <b className="text-black">BDT {startbid}</b>
           </p>
 
-          {/* Add a button to trigger the modal */}
+          {/* Adding a button to trigger the modal */}
           {placebid && (
             <button
               onClick={openModal}

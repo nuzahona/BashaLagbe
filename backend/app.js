@@ -33,17 +33,17 @@ app.get("/", (req, res) => {
 app.use("/api/customer/", customerRoutes);
 app.use("/api/auctoin", auctionRoutes);
 
-app.get("/api/report", async (req, res) => {
-  const reportData = await Report.find({});
-  res.send(reportData);
-});
+// app.get("/api/report", async (req, res) => {
+//   const reportData = await Report.find({});
+//   res.send(reportData);
+// });
 
-app.post("/api/make/report", async (req, res) => {
-  const reportData = req.body;
-  const newReport = new Report(reportData);
-  const savedReport = await newReport.save();
-  res.send(savedReport);
-});
+// app.post("/api/make/report", async (req, res) => {
+//   const reportData = req.body;
+//   const newReport = new Report(reportData);
+//   const savedReport = await newReport.save();
+//   res.send(savedReport);
+// });
 
 // Start the server
 const port = process.env.PORT || 3000;
