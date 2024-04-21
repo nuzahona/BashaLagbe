@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Video from "../assets/yolov8n.mp4";
+//import Video from "../assets/yolov8n.mp4";
 import Image from "../assets/black_bg.png";
 
 const Landingpage = () => {
@@ -15,11 +15,7 @@ const Landingpage = () => {
       <div className="absolute inset-0 overflow-hidden">
         {/* <video
           className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={Video} // Replace with your video file path
+          src={Video} // Replace with video file path
         ></video> */}
         <img
           className="w-full h-full object-cover"
